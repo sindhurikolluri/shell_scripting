@@ -9,3 +9,5 @@ echo "Third word: ${INTRO[2]}"
 echo "My intro is: ${INTRO[@]}"
 
 echo "Total Number of words in sentence is :${#INTRO[@]}"
+
+echo "MyScript name is $0"
