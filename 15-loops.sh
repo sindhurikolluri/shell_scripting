@@ -36,6 +36,6 @@ then
 dnf install $package -y &>>$LOG_FILE_NAME
 VALIDATE $? "Installing $package"
 else
-eco -e "$package is already $Y installed"
+echo -e "$package is already $Y installed"
 fi
 done
