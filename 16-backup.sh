@@ -57,7 +57,7 @@ echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
 #Finding the log files 
 FILES=$(find "$SOURCE_DIR" -name "*.log" -mtime +"$DAYS")
-echo "Files are:$FILES"
+
 
 #check if you can fetch the files 
 
