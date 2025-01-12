@@ -1,4 +1,4 @@
-
+#monitoring linux servers disk usage, send an email if disk is using more than 80%
 
 #!/bin/bash
 
