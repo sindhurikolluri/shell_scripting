@@ -48,7 +48,7 @@ fi
 
 #checking if the destination directory exist
 if [ ! -d $DEST_DIR ]
-then 
+then
     echo -e "$DEST_DIR Does not exist....please check"
     exit 1
 fi
