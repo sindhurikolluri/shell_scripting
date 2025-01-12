@@ -8,7 +8,7 @@ SOURCE_DIR=$1
 Dest_dir=$2
 DAYS=${3: -14} #if user is not providing the no of days then we can take the default as 14 
 
-LOGS_FOLDER="/var/log/shellscript-logs"
+LOGS_FOLDER=""/home/ec2-user/shellscript-logs""
 LOG_FILE=$(echo $0 | cut -d "." -f1)
 TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
@@ -24,7 +24,8 @@ VALIDATE(){
 }
 USAGE()
 {
-    echo -e "$R USAGE:: $N sh 18-backup.sh <SOURCE_DIR> <DEST_DIR> <DAYS(optional)"
+    echo -e "$R USAGE:: $N sh 18-backup.sh <SOURCE_DIR> <DEST_DIR> <DAYS(optional)>"
+    exit 1
 }
 mkdir -p /home/ec2-user/shellscript-logs/
 
